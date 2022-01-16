@@ -1,4 +1,4 @@
-## php-mysql-docker
+## php-mysql-phpmyadmin-docker
 Example for creating a project with PHP and MySQL in a docker container
 
 📦 To run the container use:
