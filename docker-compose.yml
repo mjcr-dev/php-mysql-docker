@@ -5,7 +5,7 @@ version: '3'
 services:
   db:
     image: mysql:5.7
-    container_name: sistemasPedidos_db
+    container_name: db
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: test_db
@@ -15,7 +15,7 @@ services:
       - "9906:3306"
   web:
     image: php:7.2.2-apache
-    container_name: sistemaPedidos_web
+    container_name: web
     depends_on:
       - db
     volumes:
